@@ -12,6 +12,7 @@ public partial class vEstudiante : ContentPage
     public vEstudiante()
 	{
 		InitializeComponent();
+		mostrar();
 	}
 
 	public async void mostrar()
