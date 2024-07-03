@@ -21,6 +21,5 @@ public partial class vEstudiante : ContentPage
 		List<Modelos.Estudiante> mostrar = JsonConvert.DeserializeObject<List<Modelos.Estudiante>>(content);
 		est = new ObservableCollection<Modelos.Estudiante>(mostrar);
 		listaEstudiantes.ItemsSource = est;
-
 	}
 }
