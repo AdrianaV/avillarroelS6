@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="avillarroelS6.Views.vEstudiante"
-             Title="vEstudiante">
+             Title="Estudiante">
     <VerticalStackLayout
         Spacing="20"
         Padding="20">
@@ -11,19 +11,40 @@
             FontSize="20"
             HorizontalTextAlignment="Center" />
 
-        <ListView x:Name="listaEstudiantes">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout>
-                            <Label x:Name="lblNombre" Text="{Binding nombre}"/>
-                            <Label x:Name="lblApellido" Text="{Binding apellido}"/>
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        
-        
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Código" Grid.Column="0" HorizontalOptions="Start" TextColor="Red"/>
+                <Label Text="Nombre" Grid.Column="1" HorizontalOptions="Start" TextColor="Red"/>
+                <Label Text="Apellido" Grid.Column="2" HorizontalOptions="Start" TextColor="Red"/>
+                <Label Text="Edad" Grid.Column="3"  HorizontalOptions="Start" TextColor="Red"/>
+            </Grid>
+            <ListView x:Name="listaEstudiantes">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label x:Name="lblCodigo" Text="{Binding codigo}" Grid.Column="0" HorizontalOptions="Start" />
+                                <Label x:Name="lblNombre" Text="{Binding nombre}" Grid.Column="1" HorizontalOptions="Start" />
+                                <Label x:Name="lblApellido" Text="{Binding apellido}" Grid.Column="2" HorizontalOptions="Start" />
+                                <Label x:Name="lblEdad" Text="{Binding edad}" Grid.Column="3" HorizontalOptions="Start" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
     </VerticalStackLayout>
 </ContentPage>
