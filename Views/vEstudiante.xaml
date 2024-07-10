@@ -25,7 +25,7 @@
                 <Label Text="Apellido" Grid.Column="2" HorizontalOptions="Start" TextColor="Red"/>
                 <Label Text="Edad" Grid.Column="3"  HorizontalOptions="Start" TextColor="Red"/>
             </Grid>
-            <ListView x:Name="listaEstudiantes">
+            <ListView x:Name="listaEstudiantes" ItemSelected="listaEstudiantes_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -45,6 +45,12 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+
+            <Button x:Name="btnAgregar"
+                    Text="Agregar entudiate"
+                    Clicked="btnAgregar_Clicked"/>
+            
+            
         </StackLayout>
     </VerticalStackLayout>
 </ContentPage>

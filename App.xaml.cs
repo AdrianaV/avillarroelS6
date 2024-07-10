@@ -8,7 +8,7 @@ namespace avillarroelS6
         {
             InitializeComponent();
 
-            MainPage = new vEstudiante();
+            MainPage =new NavigationPage(new Views.vEstudiante());
         }
     }
 }
