@@ -6,7 +6,8 @@ namespace avillarroelS6.Views;
 
 public partial class vEstudiante : ContentPage
 {
-	private const string Url = "http://192.168.17.40/semana6/estudiantes.php";
+    private const string Url = "http://192.168.200.7/semana6/estudiantes.php";
+    /*private const string Url = "http://192.168.17.40/semana6/estudiantes.php";*/
 	private readonly HttpClient cliente = new HttpClient();
 	private ObservableCollection<Modelos.Estudiante> est;
 

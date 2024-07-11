@@ -2,8 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="avillarroelS6.Views.ActEliminar"
-             Title="ActEliminar">
-    <VerticalStackLayout>
+             Title="Actualizar / Eliminar">
+    <VerticalStackLayout
+        Spacing="20"
+        Padding="20">
         <Label 
             Text="Actualizar/Eliminar Estudiante"
             FontSize="20"
@@ -33,7 +35,5 @@
                     Grid.Row="0"
                     Grid.Column="1"/>
         </Grid>
-        
-        
     </VerticalStackLayout>
 </ContentPage>

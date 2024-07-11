@@ -2,8 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="avillarroelS6.Views.vAgregar"
-             Title="vAgregar">
-    <VerticalStackLayout>
+             Title="Agregar estudiante">
+    <VerticalStackLayout
+        Spacing="20"
+        Padding="20">
         <Label 
             Text="Agregar estudiante"
             HorizontalTextAlignment="Center"

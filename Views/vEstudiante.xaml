@@ -2,12 +2,12 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="avillarroelS6.Views.vEstudiante"
-             Title="Estudiante">
+             Title="Estudiantes">
     <VerticalStackLayout
         Spacing="20"
         Padding="20">
         <Label 
-            Text="Semana 6: Consumo WS"
+            Text="Semana 6 y 7: Consumo WS"
             FontSize="20"
             HorizontalTextAlignment="Center" />
 
